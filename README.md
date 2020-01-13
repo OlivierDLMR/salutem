@@ -4,7 +4,15 @@
 
 ```shell script
 composer install 
+npm install
 ```
+
+
+```shell script
+symfony serve 
+npm run watch
+```
+
 
 ## Création d'un projet Symfony
 
@@ -21,5 +29,13 @@ composer create-projet symfony/website-skeleton salutem
 ```
 
 Eventuellement modifier le fichier .gitignore
+
+### Installer Webpack Encore
+
+
+```shell script
+ composer require symfony/webpack-encore-bundle
+ npm install
+```
 
 
