@@ -115,3 +115,14 @@ php bin/console doctrine:database:create
 php bin/console make:migration
 php bin/console doctrine:migrations:migrate
 ```
+
+### Création des données de test
+
+https://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html
+
+```shell
+composer req --dev orm-fixtures
+```
+
+
+
