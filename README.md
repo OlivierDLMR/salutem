@@ -14,6 +14,14 @@ php bin/console doctrine:database:create
 php bin/console doctrine:migrations:migrate
 ```
 
+
+Générer les fixtures :
+
+```shell
+php bin/console doctrine:migrations:migrate
+```
+
+
 ```shell
 symfony serve
 npm run watch

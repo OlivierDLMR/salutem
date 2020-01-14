@@ -339,6 +339,8 @@ footer.main-footer table.opening-hours tr td.hours {
     width: 100%;
 }
 
+
+
 .doctors .doctor-thumbnail .doctor-details {
     display: flex;
     flex-direction: column;
@@ -353,6 +355,11 @@ footer.main-footer table.opening-hours tr td.hours {
     font-size: 2em;
     margin-top: 0.5em;
     margin-bottom: 0;
+}
+
+.doctors .doctor-details .doctor-skills > span:not(:last-child):after{
+    content: "/";
+    margin: 0 0.5em;
 }
 
 @media only screen and (max-width: 991px) {
