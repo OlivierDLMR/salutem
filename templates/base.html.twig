@@ -12,6 +12,13 @@
     <body>
 
     <header>
+        {% if app.flashes %}
+            <div class="container">
+                {% for message in app.flashe %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
         <div class="header-top">
             <div class="container">
                 {{ render(controller('App\\Controller\\DefaultController::headerSocialNetworks')) }}
