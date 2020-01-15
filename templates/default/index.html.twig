@@ -7,6 +7,9 @@
         <article class="container">
             <h1>Salutem</h1>
             <h2>Maison de santé</h2>
+            {% if app.user %}
+                <p>{{ app.user.email }}</p>
+            {% endif %}
             <a href="#appointment" class="btn btn-dark">Prendre rendez-vous</a>
         </article>
     </section>

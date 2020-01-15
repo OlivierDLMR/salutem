@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Appointment;
 use App\Form\AppointmentType;
 use App\Repository\AppointmentRepository;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,9 +18,11 @@ class AppointmentController extends AbstractController
 {
     /**
      * @Route("/", name="appointment_index", methods={"GET"})
+     * @IsGranted("ROLE_ADMIN")
      */
     public function index(AppointmentRepository $appointmentRepository): Response
     {
+
         return $this->render('appointment/index.html.twig', [
             'appointments' => $appointmentRepository->findAll(),
         ]);
