@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Doctor index{% endblock %}
+
+{% block body %}
+    <section class="container">
+        <h1>La liste de nos docteurs </h1>
+    </section>
+    <section class="doctor">
+        <div class="container">
+            {% for doctor in doctors %}
+                {% include 'doctor/_thumbnail.html.twig' with {'doctor': doctor} %}
+            {% endfor %}
+        </div>
+    </section>
+
+
+
+{% endblock %}
