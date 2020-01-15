@@ -18,7 +18,7 @@ php bin/console doctrine:migrations:migrate
 Générer les fixtures :
 
 ```shell
-php bin/console doctrine:migrations:migrate
+php bin/console doctrine:fixtures:load
 ```
 
 
